@@ -5,6 +5,9 @@ Docker 源代码分析，学习路线: Docker 使用 libcontainerd 封装了 Lin
 # 编译
 
 - 安装 Docker Desktop（Windows 或者 Mac 平台）, Linux/Unix 只需要安装 Docker 即可。
+- 执行构建命令:
 
-
-
+	```shell
+	sudo modprobe ip_vs
+	docker build --force-rm --build-arg mirrors.tuna.tsinghua.edu.cn -t moby:current .
+	```
