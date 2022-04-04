@@ -11,3 +11,12 @@ Docker 源代码分析，学习路线: Docker 使用 libcontainerd 封装了 Lin
 	sudo modprobe ip_vs
 	docker build --force-rm --build-arg mirrors.tuna.tsinghua.edu.cn -t moby:current .
 	```
+
+- 或者在 Linux 主机上直接编译:
+
+	```shell
+	mkdir -p $GOATH/src/github.com/moby
+	mkdir -p $GOATH/src/github.com/docker
+	git clone https://github.com/bluemiaomiao/moby-zh.git $GOATH/src/github.com/moby/moby
+	git clone https://github.com/docker/cli.git /$GOPATH/src/github.com/docker/cli
+	```
